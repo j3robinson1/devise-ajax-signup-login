@@ -1,10 +1,10 @@
-#sign_in_modal.modal.fade
+#sign_in_modal.modal
  .modal-dialog
  .modal-content
  .modal-header
- %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"}
- %i.fa.fa-times-circle
- %h4#SignInModal.modal-title Sign into acount
+  %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"}
+  %i.fa.fa-times-circle
+  %h4#SignInModal.modal-title Sign into acount
  = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :remote => true, :format => :js, :html => {:class => "form-signin"}) do |f|
   .modal-body
    = text_field_tag 'user[email]'
@@ -14,7 +14,7 @@
    = check_box_tag 'user[remember_me]'
    = label_tag 'user[remember_me]', 'Remember me'
    %br
-  .modal-footer
+  .footer
    .form-actions
     %button Sign in
     %br
