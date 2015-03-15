@@ -1,3 +1,17 @@
 #sign_up_modal.modal {
   background-color: none;
 }
+.container1 {
+  position: fixed;
+  width: 250px;
+  margin-left: 15%;
+  margin-right: 50%;
+  text-align: center;
+}
+.modal-body {
+  width: 250px;
+}
+.modal-header {
+  padding-top: 0 !important;
+  min-height: 0 !important;
+}
